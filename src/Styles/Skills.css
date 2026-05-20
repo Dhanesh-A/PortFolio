@@ -1,0 +1,87 @@
+.tech-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3.5rem;
+}
+.tech-icon-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--card-bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: var(--transition);
+  cursor: default;
+}
+.tech-icon-chip:hover {
+  border-color: var(--chip-color);
+  color: var(--chip-color);
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+}
+.tech-emoji { font-size: 1rem; }
+.tech-chip-label { color: inherit; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.skill-card { padding: 2rem; }
+
+.skill-group-label {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 1.75rem;
+}
+.skill-label-primary { background: rgba(255,60,172,0.15); color: var(--primary); }
+.skill-label-blue { background: rgba(43,134,197,0.15); color: #60b4f0; }
+.skill-label-green { background: rgba(0,200,150,0.15); color: var(--green); }
+.skill-label-yellow { background: rgba(255,214,0,0.15); color: var(--yellow); }
+
+.skill-bars { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.skill-bar-wrap {}
+.skill-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.skill-name { font-size: 0.9rem; font-weight: 500; }
+.skill-pct { font-size: 0.8rem; font-weight: 700; }
+.skill-pct-primary { color: var(--primary); }
+.skill-pct-blue { color: #60b4f0; }
+.skill-pct-green { color: var(--green); }
+.skill-pct-yellow { color: var(--yellow); }
+
+.skill-bar-bg {
+  height: 6px;
+  background: var(--bg3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.skill-fill-primary { background: linear-gradient(90deg, #FF3CAC, #784BA0); }
+.skill-fill-blue { background: linear-gradient(90deg, #2B86C5, #60b4f0); }
+.skill-fill-green { background: linear-gradient(90deg, #00C896, #00e5b0); }
+.skill-fill-yellow { background: linear-gradient(90deg, #FF6B35, #FFD600); }
+
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,78 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+.project-card-primary { border-top-color: var(--primary); }
+.project-card-blue    { border-top-color: #2B86C5; }
+.project-card-green   { border-top-color: var(--green); }
+.project-card-yellow  { border-top-color: var(--yellow); }
+.project-card-orange  { border-top-color: var(--orange); }
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.project-icon-primary { background: rgba(255,60,172,0.15); }
+.project-icon-blue    { background: rgba(43,134,197,0.15); }
+.project-icon-green   { background: rgba(0,200,150,0.15); }
+.project-icon-yellow  { background: rgba(255,214,0,0.15); }
+.project-icon-orange  { background: rgba(255,107,53,0.15); }
+
+.project-title {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.title-primary { color: var(--primary); }
+.title-blue    { color: #60b4f0; }
+.title-green   { color: var(--green); }
+.title-yellow  { color: var(--yellow); }
+.title-orange  { color: var(--orange); }
+
+.project-desc { font-size: 0.9rem; line-height: 1.7; }
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+.project-highlights li {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+.bullet { font-size: 0.65rem; margin-top: 0.2rem; flex-shrink: 0; }
+.bullet-primary { color: var(--primary); }
+.bullet-blue    { color: #60b4f0; }
+.bullet-green   { color: var(--green); }
+.bullet-yellow  { color: var(--yellow); }
+.bullet-orange  { color: var(--orange); }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
