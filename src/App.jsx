@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import "../styles/globals.css";
+import "./Styles/Globals.css";
 
 function NavBar() {
   const [scrolled, setScrolled] = useState(false);
