@@ -75,7 +75,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <p>Crafted with passion by <span className="accent">Dhanesh A</span> · 2025</p>
+        <p>Crafted with passion by <span className="accent">Dhanesh A</span> · 2026</p>
       </footer>
     </Router>
   );
